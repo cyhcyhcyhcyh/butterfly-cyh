@@ -10,15 +10,15 @@ public class Main {
     public static void main(String[] args) {
         new Thread(threadGroup, new Runnable() {
             public void run() {
-                threadCyhChild.normalMethod();
+                ThreadCyh.addStatic();
             }
-        }, "normalMethod").start();
+        }, "addStatic").start();
 
         new Thread(threadGroup, new Runnable() {
             public void run() {
-                threadCyhChild.otherMethod();
+                ThreadCyh.addStatic2();
             }
-        }, "otherMethod").start();
+        }, "addStatic2").start();
 
 
     }

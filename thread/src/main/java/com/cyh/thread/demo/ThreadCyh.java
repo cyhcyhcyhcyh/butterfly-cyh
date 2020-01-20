@@ -12,6 +12,9 @@ public class ThreadCyh {
     public synchronized static void addStatic1() {
         System.out.println("addStatic1");
     }
+    public static void addStatic2() {
+        System.out.println("addStatic2");
+    }
 
     public synchronized void add() {
         try {
